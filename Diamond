@@ -1,0 +1,15 @@
+function printDiamond(height) {
+  // Iterate from 1 to the height of the diamond.
+  for (var i = 1; i <= height; i++) {
+    // Print a space for every row that is not the first or the last.
+    for (var j = 1; j < i; j++) {
+      console.log("   ");
+    }
+    // Print a number of "*" characters equal to the current row number.
+    for (var j = 1; j <= i; j++) {
+      console.log("* ");
+    }
+    // Print a new line.
+    console.log();
+  }
+}

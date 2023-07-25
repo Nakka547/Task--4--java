@@ -1,0 +1,15 @@
+function printEquilateralTriangle(height) {
+  // Iterate from 0 to the height of the triangle.
+  for (var i = 0; i < height; i++) {
+    // Iterate from 0 to i. This will print the spaces on the left side of the triangle.
+    for (var j = 0; j < i; j++) {
+      console.log(" ");
+    }
+    // Iterate from i to 2 * i - 1. This will print the stars on the right side of the triangle.
+    for (var j = i; j <= 2 * i - 1; j++) {
+      console.log("*");
+    }
+    // Print a new line.
+    console.log();
+  }
+}
